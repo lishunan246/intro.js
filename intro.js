@@ -31,13 +31,13 @@
 
     this._options = {
       /* Next button label in tooltip box */
-      nextLabel: 'Next &rarr;',
+      nextLabel: '上一步',
       /* Previous button label in tooltip box */
-      prevLabel: '&larr; Back',
+      prevLabel: '下一步',
       /* Skip button label in tooltip box */
-      skipLabel: 'Skip',
+      skipLabel: '跳过',
       /* Done button label in tooltip box */
-      doneLabel: 'Done',
+      doneLabel: '完成',
       /* Default tooltip box position */
       tooltipPosition: 'bottom',
       /* Next CSS class for tooltip boxes */
@@ -55,9 +55,9 @@
       /* Show tour control buttons? */
       showButtons: true,
       /* Show tour bullets? */
-      showBullets: true,
+      showBullets: false,
       /* Show tour progress? */
-      showProgress: false,
+      showProgress: true,
       /* Scroll to highlighted element? */
       scrollToElement: true,
       /* Set the overlay opacity */
