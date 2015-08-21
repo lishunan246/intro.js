@@ -64,6 +64,7 @@ tr.introjs-showElement > th {
 }
 
 .introjs-tooltipReferenceLayer {
+
   position: absolute;
   visibility: hidden;
   z-index: 10000000;
@@ -86,33 +87,33 @@ tr.introjs-showElement > th {
 }
 
 .introjs-helperNumberLayer {
+  border-radius: 0;
+  top:1px;
+  left:1px;
+  background:  rgba(255,140,1,1);
+  color: white;
+  box-shadow: none;
+  border: solid 3px transparent;
+  font-size: 9px;
+  display: table-cell;
+  vertical-align: middle;
+  text-shadow: none;
+  padding: 0;
+  line-height: 1;
   position: absolute;
   visibility: visible;
-  top: -16px;
-  left: -16px;
   z-index: 9999999999 !important;
-  padding: 2px;
-  font-family: Arial, verdana, tahoma;
-  font-size: 13px;
+  /*padding: 2px;*/
+
   font-weight: bold;
-  color: white;
   text-align: center;
-  text-shadow: 1px 1px 1px rgba(0,0,0,.3);
-  background: #ff3019; /* Old browsers */
-  background: -webkit-linear-gradient(top, #ff3019 0%, #cf0404 100%); /* Chrome10+,Safari5.1+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff3019), color-stop(100%, #cf0404)); /* Chrome,Safari4+ */
-  background:    -moz-linear-gradient(top, #ff3019 0%, #cf0404 100%); /* FF3.6+ */
-  background:     -ms-linear-gradient(top, #ff3019 0%, #cf0404 100%); /* IE10+ */
-  background:      -o-linear-gradient(top, #ff3019 0%, #cf0404 100%); /* Opera 11.10+ */
-  background:         linear-gradient(to bottom, #ff3019 0%, #cf0404 100%);  /* W3C */
   width: 20px;
   height:20px;
-  line-height: 20px;
-  border: 3px solid white;
-  border-radius: 50%;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3019', endColorstr='#cf0404', GradientType=0); /* IE6-9 */
-  filter: progid:DXImageTransform.Microsoft.Shadow(direction=135, strength=2, color=ff0000); /* IE10 text shadows */
-  box-shadow: 0 2px 5px rgba(0,0,0,.4);
+  /*line-height: 20px;*/
+  /*border: 3px solid white;*/
+  /*border-radius: 50%;*/
+  /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3019', endColorstr='#cf0404', GradientType=0); /!* IE6-9 *!/*/
+  /*filter: progid:DXImageTransform.Microsoft.Shadow(direction=135, strength=2, color=ff0000); /!* IE10 text shadows *!/*/
 }
 
 .introjs-arrow {
@@ -218,7 +219,8 @@ tr.introjs-showElement > th {
   margin: 0;
   text-decoration: none;
   text-shadow: 1px 1px 0 #fff;
-  font: 11px/normal sans-serif;
+    font-size: 11px;
+    font-family: "Microsoft YaHei", "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
   color: #333;
   white-space: nowrap;
   cursor: pointer;
@@ -234,7 +236,7 @@ tr.introjs-showElement > th {
   /*background-clip: padding-box;*/ /* commented out due to Opera 11.10 bug */
   -webkit-border-radius: 0.2em;
   -moz-border-radius: 0.2em;
-  border-radius: 0.2em;
+  border-radius: 0;
   /* IE hacks */
   zoom: 1;
   *display: inline;
@@ -334,7 +336,7 @@ tr.introjs-showElement > th {
   font-size: 10px;
   line-height: 10px;
   text-align: center;
-  background-color: #08c;
+  background-color: rgba(255,140,1,1);
 }
 
 .introjsFloatingElement {
