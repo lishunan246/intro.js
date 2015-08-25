@@ -186,6 +186,8 @@ tr.introjs-showElement > th {
 }
 
 .introjs-tooltip {
+  display: flex;
+  text-align: center;
   position: absolute;
   visibility: visible;
   padding: 10px;
@@ -345,4 +347,16 @@ tr.introjs-showElement > th {
   width: 0;
   left: 50%;
   top: 50%;
+}
+
+.introjs-tooltip-close{
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    color: #D6D4D4;
+}
+
+.introjs-tooltip-close:hover{
+  color: gray;
+  cursor: pointer;
 }

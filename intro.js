@@ -844,6 +844,15 @@
       tooltipLayer.appendChild(bulletsLayer);
       tooltipLayer.appendChild(progressLayer);
 
+
+      //add close btn
+      var closeBtn=document.createElement('span');
+      closeBtn.className='glyphicon glyphicon-remove introjs-tooltip-close';
+      closeBtn.onclick=function(){
+        _exitIntro.call(self, self._targetElement);
+      };
+      tooltipLayer.appendChild(closeBtn);
+
       //add helper layer number
       if (this._options.showStepNumbers == true) {
         var helperNumberLayer = document.createElement('span');
